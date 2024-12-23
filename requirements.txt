@@ -37,3 +37,6 @@ threadpoolctl==3.5.0
 tokenizers==0.20.1
 tqdm==4.66.5
 language_tool_python
+lexicalrichness
+lexical-diversity
+language-check
