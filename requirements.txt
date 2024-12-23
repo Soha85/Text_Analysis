@@ -39,4 +39,3 @@ language-check==1.1
 language-tool-python == 2.8.1
 lexicalrichness == 0.5.1
 lexical-diversity == 0.1.1
-language_tool_python
