@@ -35,8 +35,8 @@ thinc==8.3.2
 threadpoolctl==3.5.0
 tokenizers==0.20.1
 tqdm==4.66.5
- --upgrade 3to2 
---upgrade language-check
+3to2 
+language-check
 language-tool-python == 2.8.1
 lexicalrichness == 0.5.1
 lexical-diversity == 0.1.1
