@@ -6,7 +6,6 @@ joblib==1.4.2
 jsonschema==4.23.0
 jsonschema-specifications==2024.10.1
 nltk==3.9.1
-ntk==1.1.3
 numpy==2.0.2
 opt_einsum==3.4.0
 pandas==2.2.3
