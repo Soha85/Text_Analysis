@@ -1,4 +1,4 @@
-import language_check
+#import language_check
 from nltk.stem import PorterStemmer
 from itertools import groupby
 import spacy
@@ -13,7 +13,7 @@ import string
 
 nlp = spacy.load("en_core_web_md")
 stopwrds = set(stopwords.words('english'))
-gr_tool = language_check.LanguageTool('en-us')
+#gr_tool = language_check.LanguageTool('en-us')
 cosine_value = 0.5
 
 
@@ -57,7 +57,7 @@ class KEM():
                                'longsent': self.__std_GetLongSentInfo(self.__std_doc),
                                'sent info': self.__std_GetwrdsSentInfo(self.__std_doc),
                                'sentences similarity': self.__std_coisne_similarity(self.__std_doc),
-                               'grammar errors': self.__grammar_check(self.__std_doc),
+                               #'grammar errors': self.__grammar_check(self.__std_doc),
                                'Keywords list': key_dic,
                                'yule': self.__yule(self.__std_doc),
                                'Other Yules': self.__get_yules(self.__std_doc),
@@ -82,7 +82,7 @@ class KEM():
                                'sent info': self.__std_GetwrdsSentInfo(self.__std_doc),
                                'sentences similarity': self.__std_coisne_similarity(self.__std_doc),
                                'documents similarities': self.__doc_cosine_similarity(self.__std_doc, self.__gld_lst),
-                               'grammar errors': self.__grammar_check(self.__std_doc),
+                               #'grammar errors': self.__grammar_check(self.__std_doc),
                                'Keywords list': self.__Find_match_and_similarity(self.__std_doc, self.__gld_lst),
                                'yule': self.__yule(self.__std_doc),
                                'Other Yules': self.__get_yules(self.__std_doc),
