@@ -11,7 +11,7 @@ from lexicalrichness import LexicalRichness
 from lexical_diversity import lex_div as ld
 import string
 
-nlp = spacy.load("en_core_web_md")
+nlp = spacy.load("en_core_web_sm")
 stopwrds = set(stopwords.words('english'))
 #gr_tool = language_check.LanguageTool('en-us')
 cosine_value = 0.5
