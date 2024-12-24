@@ -14,7 +14,7 @@ if  st.sidebar.button("Analyze"):
     if ';' not in Golden_Answer:
         k = KEM(Input_Answer, Golden_Answer.strip())
         k.Extract_and_match()
-    elif (len(Golden_Answer.split(';')) >= 1)
+    elif (len(Golden_Answer.split(';')) >= 1):
         k = KEM(Input_Answer, Golden_Answer.split(';'))
         k.Extract_and_match()
     else:
