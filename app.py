@@ -11,7 +11,7 @@ st.sidebar.header("Parameters")
 Input_Answer = st.sidebar.text_area("Text to Enter")
 Golden_Answer = st.sidebar.text_area("Answers to Compare seprated by ;")
 if  st.sidebar.button("Analyze"):
-    if (len(Golden_Answer.split(';')) > 1):
+    if (len(Golden_Answer.split(';')) >= 1):
         lst = Golden_Answer.split(';')
         k = KEM(Input_Answer, lst)
         k.Extract_and_match()
