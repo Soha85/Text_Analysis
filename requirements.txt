@@ -1,40 +1,13 @@
-﻿docutils==0.18.1
-emoji==2.14.0
-huggingface-hub==0.25.2
-joblib==1.4.2
-jsonschema==4.23.0
-jsonschema-specifications==2024.10.1
 nltk==3.9.1
 numpy==2.0.2
-opt_einsum==3.4.0
 pandas==2.2.3
-pillow==10.4.0
-preshed==3.0.9
-protobuf==5.28.2
-pyarrow==17.0.0
-pydantic==2.9.2
-pydantic_core==2.23.4
-pydeck==0.9.1
-Pygments==2.15.1
-referencing==0.35.1
-regex==2024.9.11
-requests==2.31.0
-rich==13.9.2
 rouge==1.0.1
 rouge-metric==1.0.1
-scikit-learn==1.5.2
-scipy==1.14.1
-sentence-transformers==2.2.2
-spacy==3.8.2
-https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.6.0/en_core_web_sm-3.6.0.tar.gz
-spacy-legacy==3.0.12
-spacy-loggers==1.0.5
-termcolor==2.5.0
+spacy
+https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.8.0/en_core_web_sm-3.8.0-py3-none-any.whl
 textblob==0.18.0.post0
 thinc==8.3.2
-threadpoolctl==3.5.0
 tokenizers==0.20.1
-tqdm==4.66.5
 language-tool-python == 2.8.1
 lexicalrichness == 0.5.1
 lexical-diversity == 0.1.1
