@@ -30,7 +30,7 @@ class KEM():
                                  #disable=['textcat', 'merge_entities', 'merge_subtokens', 'merge_noun_chunks'])
         if (gld_lst != None):
             self.__gld_lst = gld_lst
-        st.write("Student answer:",self.std_txt)
+        st.write("Student answer:",self.__std_txt)
         st.write("Golden answers:",self.__gld_lst)
 
     def ExtractVA(self):
