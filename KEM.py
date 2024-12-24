@@ -23,12 +23,13 @@ class KEM():
     def __init__(self, std_txt=None, gld_lst=None):
 
         if (std_txt != None):
-            st.write("Student answer:",self.__std_txt)
+            
             # apply nlp spacy on student text
             self.__std_txt = std_txt.strip()
             self.__std_txt = self.__std_txt.replace("\n", " ").strip()
-            self.__std_doc = nlp(self.__std_txt)
-                                 #disable=['textcat', 'merge_entities', 'merge_subtokens', 'merge_noun_chunks'])
+            self.__std_doc = nlp(self.__std_txt)#disable=['textcat', 'merge_entities', 'merge_subtokens', 'merge_noun_chunks'])
+            st.write("Student answer:",self.__std_txt)
+                                 
         if (gld_lst != None):
             self.__gld_lst = gld_lst
             st.write("Golden answers:",self.__gld_lst)
