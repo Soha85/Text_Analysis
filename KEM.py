@@ -10,6 +10,7 @@ from textblob import TextBlob
 from lexicalrichness import LexicalRichness
 from lexical_diversity import lex_div as ld
 import string
+import nltk
 nltk.download('stopwords')
 nlp = spacy.load("en_core_web_sm")
 stopwrds = set(stopwords.words('english'))
