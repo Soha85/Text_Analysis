@@ -14,8 +14,8 @@ if  st.sidebar.button("Analyze"):
     if (len(Golden_Answer.split(',')) > 1):
         lst = Golden_Answer.split(',')
         k = KEM(Input_Answer, lst)
-        st.write(k.Extract_and_match())
+        k.Extract_and_match()
     else:
         k = KEM(Input_Answer)
-        st.write(k.Extractonly())
+        k.Extractonly()
 
