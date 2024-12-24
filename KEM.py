@@ -12,7 +12,7 @@ from lexical_diversity import lex_div as ld
 import string
 import nltk
 nltk.download('stopwords')
-nlp = spacy.load("en_core_web_sm")
+nlp = spacy.load("en_core_web_md")
 stopwrds = set(stopwords.words('english'))
 #gr_tool = language_check.LanguageTool('en-us')
 cosine_value = 0.5
