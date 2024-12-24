@@ -9,6 +9,7 @@ from nltk.corpus import stopwords
 from textblob import TextBlob
 from lexicalrichness import LexicalRichness
 from lexical_diversity import lex_div as ld
+import streamlit as st
 import string
 import nltk
 nltk.download('stopwords')
@@ -45,7 +46,7 @@ class KEM():
         try:
             key_dic = self.__get__keywords(self.__std_doc)
             key_dic["keywords"] = str(key_dic.get("keywords")).replace("', '", "','")
-            return json.dumps({'All Caps': self.__std_GetALLCAPS(self.__std_doc),
+            return st.write({'All Caps': self.__std_GetALLCAPS(self.__std_doc),
                                'tag': self.__std_GetTagInfo(self.__std_doc),
                                'OOV': self.__std_GetOOVInfo(self.__std_doc),
                                'tenses': self.__std_GetVerbTenses(self.__std_doc),
@@ -64,12 +65,12 @@ class KEM():
                                'Other Yules': self.__get_yules(self.__std_doc),
                                'lexical diversity': self.__lexical_diversity(self.__std_doc)})
         except Exception as e:
-            return json.dumps({'error': str(e)})
+            return st.write({'error': str(e)})
 
     def Extract_and_match(self):
         try:
             # std_key=self.__get__keywords(self.__std_doc)
-            return json.dumps({'All Caps': self.__std_GetALLCAPS(self.__std_doc),
+            return st.write({'All Caps': self.__std_GetALLCAPS(self.__std_doc),
                                'tag': self.__std_GetTagInfo(self.__std_doc),
                                'OOV': self.__std_GetOOVInfo(self.__std_doc),
                                'tenses': self.__std_GetVerbTenses(self.__std_doc),
@@ -89,7 +90,7 @@ class KEM():
                                'Other Yules': self.__get_yules(self.__std_doc),
                                'lexical diversity': self.__lexical_diversity(self.__std_doc)})
         except Exception as e:
-            return json.dumps({'error': str(e)})
+            return st.write({'error': str(e)})
 
     def __grammar_check(self, sample_doc):
         res = []
